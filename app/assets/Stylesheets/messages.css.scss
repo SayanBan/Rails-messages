@@ -1,0 +1,115 @@
+// Place all the styles related to the Messages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body, p {
+  margin: 0;
+}
+
+body {
+  background-color: #eee;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  background-color: #f2580b;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.15);
+  height: 80px; 
+  text-align: center;
+}
+
+.header img {
+  margin: 15px 0 0;
+  width: 60px;
+}
+
+.header h1 {
+  text-indent: -9999px;
+}
+
+.container {
+  width: 480px;
+  margin: 0 auto;
+}
+
+.messages, .create {
+  margin: 40px 0;
+}
+
+.messages a,
+.create .actions input {
+  background-color: #f2580b;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 12px 24px;
+  transition: background-color 0.5s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.message {
+  background-color: #fff;
+  font-weight: 300;
+  padding: 16px;
+  margin-bottom: 10px;
+}
+
+p.time {
+  color: #0084d7;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+button {
+  background-color: #f2580b;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 12px 24px;
+  transition: background-color 0.5s;
+}
+
+button:hover {
+  background-color: #c24609;
+  transition: background-color 0.5s;
+}
+
+form label {
+  display: block;
+  width: 100%;
+}
+
+form textarea {
+  border: 1px solid transparent;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 20px 0 10px;
+  min-height: 100px;
+  padding: 16px;
+  transition: border 0.5s;
+  width: calc(100% - 32px);
+}
+
+form textarea:focus {
+  border: 1px solid #0084d7;
+  box-shadow: 0;
+  outline: 0;
+  transition: border 0.5s;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .messages, .create {
+      padding: 0 20px;
+    }
+}
